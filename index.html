@@ -37,7 +37,7 @@
         </div>
     </nav>
             <h1>Nojatuolin nurkassa</h1>
-            <p>Tervetuloa blogin lämpimään tunnelmaan</p>
+            <p>Käsityöt, kutominen, virkkaus</p>
         </div>
     </header>
 
@@ -46,36 +46,31 @@
 
         <div id="kuvakaruselli" class="carousel slide" data-bs-ride="carousel">
 
+            <h3>Viimeaikaisia teoksia</h3>
+
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#kuvakaruselli" data-bs-slide-to="0" class="active"></button>
                 <button type="button" data-bs-target="#kuvakaruselli" data-bs-slide-to="1"></button>
                 <button type="button" data-bs-target="#kuvakaruselli" data-bs-slide-to="2"></button>
+                <button type="button" data-bs-target="#kuvakaruselli" data-bs-slide-to="3"></button>
             </div>
 
             <div class="carousel-inner rounded shadow">
 
                 <div class="carousel-item active">
-                    <img src="https://picsum.photos/1200/450?random=1" class="d-block w-100" alt="Kuva 1">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Tervetuloa nojatuolin nurkkaan</h5>
-                        <p>Lempeitä hetkiä ja inspiraatiota.</p>
-                    </div>
+                    <img src="images/1.png" class="d-block w-100" alt="Kuva 1">
                 </div>
 
                 <div class="carousel-item">
-                    <img src="https://picsum.photos/1200/450?random=2" class="d-block w-100" alt="Kuva 2">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Kahvikupin äärellä</h5>
-                        <p>Pysähdy hetkeksi ja hengitä.</p>
-                    </div>
+                    <img src="images/2.png" class="d-block w-100" alt="Kuva 2">
                 </div>
 
                 <div class="carousel-item">
-                    <img src="https://picsum.photos/1200/450?random=3" class="d-block w-100" alt="Kuva 3">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Arjen tarinoita</h5>
-                        <p>Pieniä oivalluksia jokaiselle päivälle.</p>
-                    </div>
+                    <img src="images/3.png" class="d-block w-100" alt="Kuva 3">
+                </div>
+
+                <div class="carousel-item">
+                    <img src="images/4.png" class="d-block w-100" alt="Kuva 4">
                 </div>
 
             </div>
@@ -91,13 +86,11 @@
         </div>
         <!-- Aloitus -->
         <section id="aloitus">
-            <h2 class="section-title">Aloitus</h2>
+            <h2 class="section-title">Miia Törnqvist</h2>
             <div class="row">
                 <div class="col-lg-8 mx-auto">
                     <p>
-                        Tervetuloa Nojatuolin nurkkaan – paikkaan, jossa pysähdytään hetkeksi
-                        arjen keskellä ja nautitaan tarinoista, ajatuksista ja inspiraation
-                        virrasta. Istu alas ja anna blogin kuljettaa sinut mukanaan.
+                        Tervetuloa Nojatuolin-nurkassa blogiin!
                     </p>
                 </div>
             </div>
@@ -108,18 +101,20 @@
             <h2 class="section-title">Blogitekstit</h2>
             <div class="row g-4">
 
-                <div class="col-md-4">
+                <div class="col-md-4 blog-item">
                     <div class="card h-100">
                         <div class="card-body">
-                            <h5 class="card-title">Ensimmäinen tarina</h5>
+                            <h5 class="card-title">29.9.2025</h5>
                             <p class="card-text">
-                                Tarinoita pienistä hetkistä, jotka tekevät arjesta merkityksellistä.
+                                Tämä pikkuinen setti odotellut kuvaamista (niinkuin moni muukin projekti 🤭)
+                                Näitä pieniä töitä on kiva tehdä isompien projektien välissä kun nopsaan valmistuvat 🥰
                             </p>
+                            <img src="images/1.png" class="img-fluid rounded">
                         </div>
                     </div>
                 </div>
 
-                <div class="col-md-4">
+                <div class="col-md-4 blog-item">
                     <div class="card h-100">
                         <div class="card-body">
                             <h5 class="card-title">Ajatuksia kahvikupin ääreltä</h5>
@@ -130,7 +125,18 @@
                     </div>
                 </div>
 
-                <div class="col-md-4">
+                <div class="col-md-4 blog-item">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">Luovuutta ilmassa</h5>
+                            <p class="card-text">
+                                Inspiraatiota ja luovia ideoita, jotka tuovat hyvää mieltä.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 blog-item">
                     <div class="card h-100">
                         <div class="card-body">
                             <h5 class="card-title">Luovuutta ilmassa</h5>
@@ -142,6 +148,9 @@
                 </div>
 
             </div>
+            <div class="text-center mt-3">
+                <button id="loadMore" class="btn btn-primary">Lataa lisää</button>
+            </div>
         </section>
 
         <!-- Sosiaalinen media -->
@@ -149,11 +158,9 @@
             <h2 class="section-title">Sosiaalinen media</h2>
             <div class="row">
                 <div class="col-md-6 mx-auto text-center">
-                    <p>Seuraa blogia myös somessa!</p>
+                    <p>Kurkkaa teoksiani myös somen puolella!</p>
 
                     <a href="#" class="btn btn-primary m-2">Instagram</a>
-                    <a href="#" class="btn btn-secondary m-2">Facebook</a>
-                    <a href="#" class="btn btn-dark m-2">Twitter</a>
                 </div>
             </div>
         </section>
@@ -162,10 +169,36 @@
 
     <!-- FOOTER -->
     <footer class="footer">
-        <p>&copy; 2025 Nojatuolin nurkassa – Kaikki oikeudet pidätetään.</p>
+        <p>&copy; 2025 Nojatuolin nurkassa. Kaikki oikeudet pidätetään.</p>
     </footer>
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const items = document.querySelectorAll(".blog-item");
+            let näkyvät = 3; // Montako näytetään aluksi
+
+            // Piilotetaan kaikki paitsi ensimmäiset 3
+            items.forEach((item, index) => {
+                if (index >= näkyvät) item.style.display = "none";
+            });
+
+            document.getElementById("loadMore").addEventListener("click", function() {
+                // Näytetään 3 lisää
+                for (let i = näkyvät; i < näkyvät + 3; i++) {
+                    if (items[i]) items[i].style.display = "block";
+                }
+
+                näkyvät += 3;
+
+                // Jos kaikki näkyvät → piilota nappi
+                if (näkyvät >= items.length) {
+                    this.style.display = "none";
+                }
+            });
+        });
+    </script>
 </body>
 </html>
